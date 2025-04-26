@@ -16,8 +16,8 @@ export default function App() {
       <Banners></Banners>
       <Navbars></Navbars>
 
-      <div className="dark: bg-gray-400 text-white pl-56 pr-56 mt-6 mb-6 ml-40 mr-40 justify-center content-center text-center">
-        I am a User Experience based in Seattle. WA. I graduated with a BFA in Communication Design & Technology from Parsons the New School for Design in NYC.
+      <div style={{ fontFamily: "'DIN Condensed', sans-serif"}} className="text-gray-900 pl-56 pr-56 mt-6 mb-6 ml-40 mr-40 justify-center content-center text-center">
+        I am a User Experience based in Seattle. WA. I graduated with a BFA in Communication Design & Technology from Parsons the New School for Design in NYC. <br />
 
         As a User Experience Designer, I aim to create simple, meaningful designs through user research and designing with intention.
       </div>

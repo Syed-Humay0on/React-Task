@@ -11,21 +11,21 @@ function Navbars()
         
     </div>
 </nav> */}
-<nav className="p-3" style={{backgroundColor:'#373737'}}>
-    <div className="max-w-screen-xl px-4 py-3 mx-auto dark:bg-gray-800">
-        <div className="flex items-center justify-center content-center dark:bg-gray-900">
-            <ul className="flex flex-row font-medium mt-0 space-x-8 rtl:space-x-reverse text-sm">
+<nav className="p-3" style={{backgroundColor:'#1D1D1D'}}>
+    <div className="max-w-screen-xl px-4 py-3 mx-auto">
+        <div className="flex items-center justify-center content-center">
+            <ul style={{ fontFamily: "'DIN Condensed', sans-serif"}} className="flex flex-row font-medium mt-0 space-x-8 rtl:space-x-reverse text-sm">
                 <li>
-                    <a href="#" className="text-gray-900 hover:text-emerald-500" aria-current="page">HOME</a>
+                    <a href="#" className="text-white hover:text-[#02c7b5]" aria-current="page">HOME</a>
                 </li>
                 <li>
-                    <a href="#" className="text-gray-900 hover:text-emerald-500">UX DESIGN</a>
+                    <a href="#" className="text-white hover:text-[#02c7b5]">UX DESIGN</a>
                 </li>
                 <li>
-                    <a href="#" className="text-gray-900 hover:text-emerald-500">OTHER WORK</a>
+                    <a href="#" className="text-white hover:text-[#02c7b5]">OTHER WORK</a>
                 </li>
                 <li>
-                    <a href="#" className="text-gray-900 hover:text-emerald-500">ABOUT ME</a>
+                    <a href="#" className="text-white hover:text-[#02c7b5]">ABOUT ME</a>
                 </li>
             </ul>
         </div>
