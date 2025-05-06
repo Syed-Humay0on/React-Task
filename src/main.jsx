@@ -8,7 +8,7 @@ import './index.css'
 import Banners from './Banner'
 import Navbars from './Navbar'
 import Jumbotron from './jumbotron'
-
+import{ createBrowserRouter, RouterProvider} from 'react-router'
 
 export default function App() {
   return (
@@ -18,16 +18,31 @@ export default function App() {
       <Navbars></Navbars>
       <Jumbotron></Jumbotron>
 
-      <div style={{ fontFamily: "'DIN Condensed', sans-serif"}} className="text-gray-900 pl-56 pr-56 mt-6 mb-6 ml-40 mr-40 justify-center content-center text-center">
+      {/*<div style={{ fontFamily: "'DIN Condensed', sans-serif"}} className="text-gray-900 pl-56 pr-56 mt-6 mb-6 ml-40 mr-40 justify-center content-center text-center">
         
-      </div>
-    </>
+      </div> */}
+    </> 
   )
 }
+
+const router = createBrowserRouter([
+  {
+  path: '/',
+  element: <App/>
+  },
+  {
+  path: '/Jumbotron',
+  element: <Jumbotron/>
+  },
+  {
+  path: '/Navbar',
+  component: <Navbars/>
+  },
+])
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
 
-    <App />
+<RouterProvider router={router}></RouterProvider>
   </StrictMode>,
 )
